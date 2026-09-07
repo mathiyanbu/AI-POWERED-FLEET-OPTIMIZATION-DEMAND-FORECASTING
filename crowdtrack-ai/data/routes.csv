@@ -1,0 +1,5 @@
+route_id,route_name,base_capacity,base_buses,lat,lng
+A,Route A,90,5,40.7128,-74.006
+B,Route B,90,7,40.724,-73.989
+C,Route C,90,4,40.731,-74.013
+D,Route D,90,4,40.744,-73.99

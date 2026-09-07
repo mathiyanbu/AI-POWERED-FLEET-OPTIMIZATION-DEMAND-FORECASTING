@@ -1,0 +1,65 @@
+{
+  "project_info": {
+    "name": "Crowd Track AI",
+    "version": "1.0.0",
+    "disclaimer": "Prototype for Research and Educational Use Only. This is NOT a safety-certified automotive system."
+  },
+  "video_settings": {
+    "video_source": "videos/sample.mp4",
+    "use_webcam": false,
+    "webcam_index": 0
+  },
+  "yolo_settings": {
+    "model_name": "yolov8n",
+    "model_path": "models/yolov8n.pt",
+    "confidence_threshold": 0.5,
+    "iou_threshold": 0.45,
+    "device": "cpu",
+    "max_det": 300
+  },
+  "tracking": {
+    "track_thresh": 0.5,
+    "track_buffer": 30,
+    "match_thresh": 0.8,
+    "min_box_area": 10
+  },
+  "zones": {},
+  "risk_engine": {
+    "pedestrian_risk_scores": {
+      "green_zone": 10,
+      "yellow_zone": 25,
+      "red_zone": 50
+    },
+    "motorcycle_risk_scores": {
+      "green_zone": 5,
+      "yellow_zone": 20,
+      "red_zone": 40
+    },
+    "vehicle_risk_scores": {
+      "green_zone": 5,
+      "yellow_zone": 10,
+      "red_zone": 20
+    },
+    "zone_severity": {
+      "left_blind_spot": "yellow",
+      "right_blind_spot": "yellow",
+      "door_safety_zone": "red",
+      "left_turn_risk_zone": "red"
+    }
+  },
+  "database": {
+    "path": "database/events.db"
+  },
+  "confidence_threshold": 0.25,
+  "demo_mode": false,
+  "camera_source": 0,
+  "passenger_monitor": {
+    "bus_id": "BUS-042",
+    "route": "CENTRAL -> CAMPUS",
+    "capacity": 7,
+    "api_host": "127.0.0.1",
+    "api_port": 8765,
+    "update_interval_seconds": 2
+  },
+  "video_path": "C:\\Users\\DELL01\\Downloads\\stock-footage-puri-odisha-india-february-handheld-shot-inside-view-of-bus-pilgrims-sitting-in-bus.mp4"
+}
